@@ -22,7 +22,7 @@ public class StartMain extends BaseAty{
      */
     public void  onLogin(View view){
         startActivity(new Intent(StartMain.this,LoginAty.class));
-        this.finish();
+        //this.finish();
     }
 
     /**
@@ -31,7 +31,7 @@ public class StartMain extends BaseAty{
      */
     public void onRegister(View view){
         startActivity(new Intent(this,RegisterAty.class));
-        this.finish();
+        //this.finish();
     }
 
 }

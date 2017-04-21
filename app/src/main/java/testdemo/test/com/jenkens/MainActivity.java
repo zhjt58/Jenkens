@@ -93,8 +93,11 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);//调用android自带的照相机intent.putExtra(android.provider.MediaStore.EXTRA_OUTPUT, photoUri);
             startActivityForResult(intent, 1);
         } else if (id == R.id.nav_send) {
-            android.os.Process.killProcess(android.os.Process.myPid());    //获取PID
-            System.exit(0);                                               //常规java、c#的标准退出法，返回值
+            //android.os.Process.killProcess(android.os.Process.myPid());    //获取PID
+            //System.exit(0);                                               //常规java、c#的标准退出法，返回值
+            Intent intent = new Intent(this,StartMain.class);
+            startActivity(intent);
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -20,7 +20,7 @@ public class LoginAty extends BaseAty{
      * @param view
      */
     public void onLoginMain(View view){
-        startActivity(new Intent(this,MainActivity.class));
+        startActivity(new Intent(this,RegisterAty.class));
         this.finish();
     }
 }

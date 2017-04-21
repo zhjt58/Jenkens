@@ -24,7 +24,7 @@ android {
     defaultConfig {
         applicationId "testdemo.test.com.jenkens"
         minSdkVersion 19
-        targetSdkVersion 22
+        targetSdkVersion 23
         multiDexEnabled true
         versionCode verCode
         versionName APP_VERSION
