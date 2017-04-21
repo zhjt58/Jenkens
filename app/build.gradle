@@ -7,10 +7,9 @@ def getDate() {
     def formattedDate = date.format('yyyyMMddHHmm')
     return formattedDate
 }
-def verCode = 19
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.0"
     //签名
     signingConfigs {
         signingConfig {
@@ -23,10 +22,10 @@ android {
 
     defaultConfig {
         applicationId "testdemo.test.com.jenkens"
-        minSdkVersion 19
+        minSdkVersion 14
         targetSdkVersion 23
         multiDexEnabled true
-        versionCode verCode
+        versionCode 240
         versionName APP_VERSION
         resValue("string", 'app_version', APP_VERSION)
         buildConfigField "boolean", "LEO_DEBUG", "true"
